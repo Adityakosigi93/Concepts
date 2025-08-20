@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    pair<int,int>p={1,2};
+    cout<<p.second;
+    pair <int,pair<int,int>>o={1,{2,3}};
+    cout<<o.first;
+    pair<int,int> a[100]={{1,2},{2,4},{3,4}};
+    cout<<a[0].first;
+    return 0;
+}
