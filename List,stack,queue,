@@ -1,0 +1,87 @@
+LIST
+  #include<bits/stdc++.h>
+  using namespace std;
+  int main(){
+      list<int>l={1,2,3,4};
+      l.push_front(5);
+      l.emplace_front(7);
+      l.pop_front();
+      l.pop_back();
+      //l1.swap(l2); used for swapping
+      for(auto it:l){
+          cout<<it<<" ";
+      }
+      //rest functions same as vectors
+  }
+*DEQUEUE IS SAME AS VECTOR,LIST....
+
+STACK--LIFO-Last in first out
+// Online C++ compiler to run C++ program online
+  #include <bits/stdc++.h>
+  using namespace std;
+
+  int main() {
+    stack<int> st;
+    st.push(1); //{1}
+    st.push(2); //{2,1}
+    st.push(3);//{3,2,1}
+    st.push(4);//{4,3,2,1}
+    st.push(5);//{5,4,3,2,1}
+    st.emplace(6);//{6,5,4,3,2,1}
+    st.pop(); //{5,4,3,2,1}
+    cout<<st.top(); // 5
+    cout<<endl;
+    cout<<st.size(); //5
+    cout<<"\n";
+    cout<<st.empty();  //false (0)
+
+    return 0;
+  }
+
+
+QUEUE-FIFO
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    queue<int> q;
+    q.push(1); //{1}
+    q.push(2);//{1,2}
+    q.push(3);//{1,2,3}
+    q.pop(); //{2,3} removes front element
+    cout<<q.front(); //2
+    cout<<q.back();//3
+    q.back()+=4;
+    cout<<q.back();//7
+    cout<<endl;
+    return 0;
+}
+
+PRIORITY QUEUE
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    priority_queue<int> pq; //greater element comes top
+    pq.push(1);//{1}
+    pq.push(2);//{2,1}
+    pq.push(5);//{5,2,1}
+    pq.push(3);//{5,3,2,1}
+    pq.push(8);//{8,5,3,2,1}
+    cout<<pq.top(); //8
+    pq.pop();
+    cout<<pq.top(); //5
+            
+    priority_queue<int,vector<int>,greater<int>> q;
+    q.push(1); //{1}
+    q.push(10);//{1,10}
+    q.push(5);//{1,5,10}
+    cout<<q.top();
+    
+    
+    
+    
+    return 0;
+}
