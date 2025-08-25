@@ -62,3 +62,21 @@ int main() {
 
     
 }
+LIST---IN C++
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> ls;
+    for (int i=6;i>0;i--){
+        ls.emplace_back(i);
+    }
+    sort(ls.begin(),ls.end(),greater<int>());   //REVERSE SORTING
+    for(auto it:ls){
+        cout<<it<<" ";
+    }
+    return 0;
+}
+
+sort(ls.begin(),ls.end());  //for sorting it
