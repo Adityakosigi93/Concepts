@@ -6,3 +6,5 @@ array size inside main function if declared integer it can carry size of 1e6
 array size if globally declared ar[1e8] .it can carry size of 1e8
 if array declared globally it automatically takes garbage values as 0 (if not initialised).
 ASCCI value foe 'a'=97 'A'=65;
+In TIME COMPLEXITY NxN is bigger value than N+N.  2N,3N Can be ignored 
+it is represented as O(NxN) or O(N+N) OR O(N) or Biga of NxN.
