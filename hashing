@@ -20,6 +20,29 @@ int main() {
     }
     return 0;
 }
+//using stl
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int i,j,n,m,num,ar[100];
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>ar[i];
+    }
+    map<int,int> mpp;
+    for(i=0;i<n;i++){
+        mpp[ar[i]]+=1;
+    }
+    cin>>m;
+    while(m--){
+        cin>>num;
+        cout<<mpp[num]<<endl;
+    }
+    return 0;
+}
 // CHARACTER HASHING
 #include <bits/stdc++.h>
 using namespace std;
