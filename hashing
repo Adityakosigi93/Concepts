@@ -20,7 +20,7 @@ int main() {
     }
     return 0;
 }
-//using stl
+//using stl number hashing
 // Online C++ compiler to run C++ program online
 #include <bits/stdc++.h>
 using namespace std;
@@ -28,18 +28,21 @@ using namespace std;
 int main() {
     // Write C++ code here
     int i,j,n,m,num,ar[100];
-    cin>>n;
+    cin>>n;                                //5
     for(i=0;i<n;i++){
-        cin>>ar[i];
+        cin>>ar[i];                       // 1 2 1 2 1 
     }
-    map<int,int> mpp;
-    for(i=0;i<n;i++){
-        mpp[ar[i]]+=1;
+    map<int,int> mpp;                    //it creates like a dictionary in python it maps (key,value) in mpp.
+    for(i=0;i<n;i++){                    // mpp[key]=value.  you can access the key and value
+        mpp[ar[i]]+=1;                   //ar[i] is key and the value is increseing by 1.
     }
     cin>>m;
     while(m--){
         cin>>num;
         cout<<mpp[num]<<endl;
+    }
+    for(auto it:mpp){
+        cout<<it.first<<it.second<<endl;   // 1-->3  //2-->2
     }
     return 0;
 }
