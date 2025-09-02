@@ -69,3 +69,30 @@ int main() {
 
     return 0;
 }
+//USING STL character hshing
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    // Write C++ code here
+    string s;
+    char ch;
+    int m,i;
+    cin>>s;
+    map<char,int> mpp;
+    for(i=0;i<s.size();i++){
+        mpp[s[i]]+=1;
+    }
+    
+    cin>>m;
+    while(m--){
+        cin>>ch;
+        cout<<mpp[ch]<<endl;
+    }
+    for(auto it:mpp){
+        cout<<it.first<<it.second<<endl;
+    }
+    
+
+    return 0;
+}
