@@ -1,1 +1,4 @@
 return function is used to terminate the outer loop!
+"1e7" means "10 to the power 7"
+call  by reference can alter the original variable value. while cal by value takes only copy of original variable value. 
+pointer variable is used to take address of the variable.
