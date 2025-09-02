@@ -1,0 +1,46 @@
+// NUMBER HASHING
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int i,j,n,m,num,ar[100];
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>ar[i];
+    }
+    int hash[13]={0};
+    for(i=0;i<n;i++){
+        hash[ar[i]]+=1;
+    }
+    cin>>m;
+    while(m--){
+        cin>>num;
+        cout<<hash[num]<<endl;
+    }
+    return 0;
+}
+// CHARACTER HASHING
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    // Write C++ code here
+    string s;
+    char ch;
+    int m;
+    cin>>s;
+    int hash[26]={0};
+    for(char c=0;c<s.size();c++){
+        hash[s[c]-'a']+=1;
+    }
+    
+    cin>>m;
+    while(m--){
+        cin>>ch;
+        cout<<hash[ch-'a'];
+    }
+    
+
+    return 0;
+}
