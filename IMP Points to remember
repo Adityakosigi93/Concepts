@@ -9,3 +9,5 @@ ASCCI value foe 'a'=97 'A'=65;
 In TIME COMPLEXITY NxN is bigger value than N+N.  2N,3N Can be ignored 
 it is represented as O(NxN) or O(N+N) OR O(N) or Biga of NxN.
 for storing and fetching TIME COMPLEXITY of MAP takes log(n) where n is the number of elements in map. (map<int,int> mppp;)
+If we use map<key,value> then key can be anything it can be pair, double,int, anything. BUT
+In Unordered mapping key can only have individual data type!(you cant use pair<int,int>).
