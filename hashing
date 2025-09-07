@@ -69,8 +69,9 @@ int main() {
 
     return 0;
 }
+
 //USING STL character hshing
-// Online C++ compiler to run C++ program online
+
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
@@ -94,5 +95,40 @@ int main() {
     }
     
 
+    return 0;
+}
+
+//using array
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int i,ar[100],x[100]={0},n,s,n3,n2,max;
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>ar[i];
+    }
+    
+    for(i=0;i<n;i++){
+        x[ar[i]]++;
+        
+    }
+    cin>>n2;
+    cout<<x[n2]<<endl;
+    max=x[0];
+    for(i=0;i<100;i++){
+        if(x[i]>max ){
+            max=x[i];
+        }
+    }
+    cout<<max<<endl;
+    for(i=0;i<100;i++){
+        if(x[i]==max){
+            s=i;
+            
+        }
+    }
+    cout<<"highest frequency element is "<<s; 
     return 0;
 }
