@@ -12,3 +12,4 @@ for storing and fetching TIME COMPLEXITY of MAP takes log(n) where n is the numb
 If we use map<key,value> then key can be anything it can be pair, double,int, anything. BUT
 In Unordered mapping key can only have individual data type!(you cant use pair<int,int>).
 v.insert(v.begin()+2,1,3);//it inserts "3" 1 time
+v.erase(start,end)
