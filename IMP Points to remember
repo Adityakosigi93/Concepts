@@ -22,3 +22,5 @@ To swap two elements in an array, you must use their indices and a temporary var
 int min = a[i];
 swap(min, a[j]); // ❌ This only swaps values locally — a[i] won't change
 swap(a[i], a[j]); // correct way!!!
+BUBBLE SORT--Repeatedly swaps adjacent elements if they are in the wrong order.
+SELECTION SORT--Repeatedly swaps adjacent elements if they are in the wrong order.
