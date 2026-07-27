@@ -1,0 +1,218 @@
+<!DOCHTML>
+<html>
+    <head>
+        <title>
+            My first HTML page!
+        </title>
+        <link rel="icon"  href="images/adi.jpg">
+
+    </head>
+    <body>
+        <header style="background-color:lightgreen" >
+            <h1>this is my first html page!</h1>
+            <a href="index.html" target="_blank" >home</a>
+            <a href="about.html" target="_blank">about</a>
+            <a href="lyrics.html" target="_blank">Lyrics</a>
+        </header>
+        <br><hr>
+        <h1>this is an test heading!</h1>
+        <h2>this is a test subheading!</h2>
+        <h3>this is a test sub-subheading!</h3>
+        <br><hr>
+
+
+        <!-- this is my first comment-->
+
+
+        <p>this is a test paragraph!  huegfuwegfgewhgwfhbfhwhvavchb</p>
+
+
+        <a href="https://www.youtube.com/" 
+            target="_blank"
+            title="Goes to youtube!" >
+                    click me! 
+        </a>
+        <br><hr>
+
+
+        <a href="lyrics.html" target="_blank" title="goes to lyrics">
+            Lyrics!
+        </a>
+
+
+        <br><hr>
+        <a href="mailto:adityakosigi18@gmail.com" target="_blank" title="mail to aditya">
+            Email me!
+        </a>
+        <br><hr>    
+
+
+        <a href="https://bmsce.ac.in/" target="_blank" title="Goes to BMSCE website">
+            <img src="images/fest!.png" alt="bmsce fest!" height="200" >
+        </a>
+        <br><hr>
+        <br>
+
+
+
+        <h3>Shakira foot ball song! </h3>
+        <audio src ="football.mp3" controls>
+             shakira!
+        </audio>
+        <br><hr>
+
+
+
+        <h3>Ramayana video!</h3>
+        <video src="ramayana.mp4" controls   width="500" >
+
+        </video>
+        
+        <!-- text formatting -->
+        <p>this is normal text!</p>
+        <p>this is <b>bold</b> text!</p>
+        <p>this is <i>italic</i> text!</p>
+        <p>this is <u>underlined</u> text!</p>
+        <p>this is <del>deleted</del> text!</p>
+        <p>this is <big>big</big> text!</p>
+        <p>this is <small>small</small> text!</p>
+        <p>this is <sub>subscript</sub> text!</p>
+        <p>this is <sup>superscript</sup> text!</p>
+        <p>this is <mark style="background-color:aqua">highlighted</mark>> text!</p>
+        
+
+        <!-- spaninline container-->
+         <!--block container of group-->
+        <p><span style="background-color:yellow">This is span title!</span></p>
+        <p><div style="background-color:cyan">This is my div title!</div></p>
+        <p><span style="background-color:yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio ipsum vero eius quibusdam illum, fugiat provident optio aperiam eaque minima corrupti harum. Iste nam sequi aspernatur laborum molestias neque.</span></p>
+        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio ipsum vero eius quibusdam illum, fugiat provident optio aperiam eaque minima corrupti harum. Iste nam sequi aspernatur laborum molestias neque.</p>
+            <div style="background-color:cyan">lorem ipsum dolor sit amet Iusto distinctio ipsum vero eius quibusdam illum, fugiat provident optio aperiam eaque minima</div></p>
+
+
+        <!--unordered list-->
+        <h4>Grocerries!</h4>
+        <ul>
+            <li>eggs</li>
+            <li>milk</li>
+            <li>bread</li>
+            <li>coffee</li>
+                <ul>
+                    <li>nescafe</li>
+                    <li>bru</li>
+                    <li>instant coffee</li>
+                </ul>
+            <li>butter</li>
+        </ul>    
+        <!--ordered list-->
+        <h4>To-Do List</h4>
+        <ol>
+            <li>Buy groceries</li>
+            <li>Walk the dog</li>
+            <li>Finish homework</li>
+        </ol>
+        <!--description list (<dl>,<dt>,<dd>)-->
+        <h4>Description List</h4>
+        <dl style="background-color:lightgray;border:2px solid black">
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+
+
+        <h3>Store hours</h3>
+        <table border="2" style="background-color:black">
+            <tr align="center" style="background-color:lime">
+                <th width="100">Sunday </th>
+                <th width="100">Monday </th>
+                <th width="100">Tuesday </th>
+                <th width="100">Wednesday </th>
+                <th width="100">Thursday </th>
+                <th width="100">Friday </th>
+                <th width="100">Saturday </th>
+            </tr>
+            <tr align="center" style="background-color:yellow">
+                <td>Closed </td>
+                <td>9-5 </td>
+                <td>9-5 </td>
+                <td>9-5 </td>
+                <td>9-5 </td>
+                <td>9-5 </td>
+                <td>11-3 </td>
+            </tr>
+        </table>
+        <br><hr>
+
+        <a href="https://chatgpt.com/" target="_blank" title="goes to chatgpt!">
+            <button style="background-color:rgb(178, 32, 142);color:antiquewhite; font-size:25px">Click Me!</button>
+        </a>
+        <hr><br>
+
+        <button onclick="dosomething()" style="background-color:lime;color:black;border:2px solid black">
+            Click me to do something!
+            <script>
+                function dosomething(){
+                    alert("you clicked the button!");
+
+                }
+            </script>
+        </button>
+        <hr><br>
+        <form action="index.php" method="POST">
+            <label for="username">UserName:</label>
+            <input type="text" placeholder="Enter UserName!" id="username" minlength="3" maxlength="20" required>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" placeholder="Enter password!" id="password" minlength="5" maxlength="20" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="Enter email!" id="email" required>
+            <br><br>
+            <label for="phone">Phone: </label>
+            <input type="tel" placeholder="Enter phone number!" id="phone" pattern="[0-9]{10}" maxlength="10" required>
+            <br><br>
+            <label for="bday">Birthdate </label>
+            <input type="date" id="bday"  required>
+            <br><br>
+            <label for="gender" >Gender: </label>
+            <label for="Mr." >Mr.</label>
+            <input type="radio" id="Mr." name="gender">
+            <label for="Mrs." >Mrs.</label>
+            <input type="radio" id="Mrs." name="gender" >
+            <!--we should add name="gender" to all radio buttons so that only one can be marked to the radio-->
+
+            <br><br>
+            <label for="payment">payment:</label>
+            <select id="payment" name="payment" required>
+                <option>Visa</option>
+                <option>Mastercard</option>
+                <option>American Express</option>
+            </select>
+            <br><br>
+            <label for="subscribe">Subscribe!</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <br><br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"> </textarea>
+            <br><br>
+            <label for="file" >Upload File:</label>
+            <input type="file" id="file" accept="jpg,png,mp3,mp4">
+            <br><br>
+            <input type="reset" >
+            <br><br>
+            <input type="submit">
+        </form>
+        <footer style="background-color:lightgreen">
+            <hr>
+            <Author>Author: Aditya Kosigi</Author>
+            <br>
+            &copy; 2024 Aditya Kosigi. All rights reserved.
+            <br>
+            <a href="mailto:adityakosigi93@gmail.com" target="_blank" title="mail to aditya">adityakosigi93@gmail.com</a>
+        </footer>
+
+        
+
+    </body>
+</html>
